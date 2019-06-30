@@ -30,71 +30,53 @@
 						<span class="glyphicon glyphicon-lock"></span> Create An Account
 					</div>
 					<div class="panel-body">
-						<form class="form-horizontal" role="form">
-						
-						
-							<div class="form-group">
-								<label for="ROLE" class="col-sm-3 control-label"> Select Role</label>
-									<!-- <select id="subject"
-									
-									 <label class="control-label">Select Complain Category </label> -->
-									 <div class="col-sm-9">
-									<select class="form-control" name="role" required="required" >
-										<option value= "Engineer">Engineer</option>
-										<option value= "Manager">Manager</option>
-										
-									</select>
-									</div>
-									</div>
+						<form class="form-horizontal" action="login" role="form" method="get">
 
 
 							<div class="form-group">
-								<label for="nokp" class="col-sm-3 control-label">FirstName</label>
+								<label for="name" class="col-sm-3 control-label">User
+									Name</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" id="firstname"
+									<input type="text" class="form-control" id="name" name="name"
 										placeholder="Enter First Name" required>
 								</div>
 							</div>
 
-							<div class="form-group">
-								<label for="nokp" class="col-sm-3 control-label">LastName</label>
-								<div class="col-sm-9">
-									<input type="text" class="form-control" id="lastname"
-										placeholder="Enter Last Name" required>
-								</div>
-							</div>
 
 
-							<div class="form-group">
-								<label for="birthDate" class="col-sm-3 control-label">DOB</label>
-								<div class="col-sm-9">
-									<input type="date" id="Date" class="form-control">
-								</div>
-							</div>
 
 							<div class="form-group">
 								<label for="phoneNumber" class="col-sm-3 control-label">Mobile
 									Number </label>
 								<div class="col-sm-9">
-									<input type="MobileNumber" id="MobileNumber"
+									<input type="MobileNumber" id="MobileNumber" name="mobileNo"
 										placeholder=" Your Mobile number" class="form-control">
 
 								</div>
 							</div>
 
 							<div class="form-group">
-								<label for="nokp" class="col-sm-3 control-label">E-Mail</label>
+								<label for="email" class="col-sm-3 control-label">E-Mail</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" id="username"
+									<input type="text" class="form-control" id="email" name="email"
 										placeholder="Enter Email Or UserName" required>
 								</div>
 							</div>
+
+							<div class="form-group">
+								<label for="address" class="col-sm-3 control-label">Address</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="address"
+										name="address" placeholder="Enter Email Or UserName" required>
+								</div>
+							</div>
+
 							<div class="form-group">
 								<label for="nopend" class="col-sm-3 control-label">
 									Password</label>
 								<div class="col-sm-9">
 									<input type="password" class="form-control" id="password"
-										placeholder="Password" required>
+										name="password" placeholder="Password" required>
 								</div>
 							</div>
 							<div class="form-group">

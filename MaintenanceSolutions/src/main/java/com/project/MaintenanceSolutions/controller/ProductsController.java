@@ -29,6 +29,8 @@ public class ProductsController extends HttpServlet {
 	}
 	
 	
+	//Navigation 
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String forward = "";
@@ -56,6 +58,7 @@ public class ProductsController extends HttpServlet {
 	}
 
 
+	// adding data to database
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Products products = new Products();
@@ -83,6 +86,7 @@ public class ProductsController extends HttpServlet {
 		}
 		
 		
+		// forwarding the next page, to list the products dynamically
 		RequestDispatcher view = request.getRequestDispatcher(AllProduct);
 		request.setAttribute("products", dao.getAllProducts());
 		view.forward(request, response);

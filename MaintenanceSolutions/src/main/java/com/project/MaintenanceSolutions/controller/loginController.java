@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.project.MaintenanceSolutions.daoimpl.UserLoginDaoImpl;
+import com.project.MaintenanceSolutions.modal.userLogin;
+
 
 @WebServlet("/login")
 public class loginController extends HttpServlet {
@@ -39,4 +41,21 @@ public class loginController extends HttpServlet {
 
 	}
 
-}
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		userLogin userLogin = new userLogin();
+
+		userLogin.setName(request.getParameter("name"));
+		userLogin.setEmail(request.getParameter("email"));
+		userLogin.setPassword(request.getParameter("password"));
+	
+			dao.addUserLogin(userLogin);
+			response.sendRedirect("login.jsp");
+		}
+
+		
+	}
+	
+	
+

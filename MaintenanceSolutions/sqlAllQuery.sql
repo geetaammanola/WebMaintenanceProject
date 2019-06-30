@@ -41,8 +41,8 @@ CREATE TABLE `complain` (
       `email` varchar(100) DEFAULT NULL,
   `mobileNo` int(20) NOT NULL,
    `address` varchar(150) DEFAULT NULL,
-   `App-date` date DEFAULT NULL,
-  `App-slot` varchar(45) DEFAULT NULL,
+   `appDate` date DEFAULT NULL,
+  `appSlot` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`complainid`)
 );
 

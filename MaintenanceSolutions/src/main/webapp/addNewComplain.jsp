@@ -25,9 +25,9 @@
 
 
 <script>
-function success() {
-  alert("Data Is Submitted Successfully");
-}
+	function success() {
+		alert("Data Is Submitted Successfully");
+	}
 </script>
 </head>
 <body>
@@ -189,7 +189,7 @@ function success() {
 						<div class="col-md-12">
 
 							<input type="submit" class="btn btn-primary pull-right"
-								onclick="success() value="Submit">
+								onclick="success()" value="Submit">
 						</div>
 					</div>
 				</form>

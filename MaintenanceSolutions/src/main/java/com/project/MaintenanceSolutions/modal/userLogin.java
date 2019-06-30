@@ -2,37 +2,22 @@ package com.project.MaintenanceSolutions.modal;
 
 public class userLogin {
 	
-	private int userid;
-	private String role;
-	private String fname;
-	private String lname;
+	private int accountid;
+	private String name;
 	private String email;
 	private String password;
 	
-	
-	public int getUserid() {
-		return userid;
+	public int getAccountid() {
+		return accountid;
 	}
-	public void setUserid(int userid) {
-		this.userid = userid;
+	public void setAccountid(int accountid) {
+		this.accountid = accountid;
 	}
-	public String getRole() {
-		return role;
+	public String getName() {
+		return name;
 	}
-	public void setRole(String role) {
-		this.role = role;
-	}
-	public String getFname() {
-		return fname;
-	}
-	public void setFname(String fname) {
-		this.fname = fname;
-	}
-	public String getLname() {
-		return lname;
-	}
-	public void setLname(String lname) {
-		this.lname = lname;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getEmail() {
 		return email;
@@ -46,14 +31,11 @@ public class userLogin {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
 	@Override
 	public String toString() {
-		return "userLogin [userid=" + userid + ", role=" + role + ", fname=" + fname + ", lname=" + lname + ", email="
-				+ email + ", password=" + password + "]";
+		return "userLogin [accountid=" + accountid + ", name=" + name + ", email=" + email + ", password=" + password
+				+ "]";
 	}
-	
-	
 	
 	
 	

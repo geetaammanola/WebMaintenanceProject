@@ -90,6 +90,10 @@
 						</c:forEach>
 					</tbody>
 				</table>
+				
+				<p>
+					<a href="ComplainResolveController?action=insert">Add Resolved Record</a>
+				</p>
 
 			</div>
 		</div>

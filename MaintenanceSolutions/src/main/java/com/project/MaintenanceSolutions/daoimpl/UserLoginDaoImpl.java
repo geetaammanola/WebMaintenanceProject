@@ -35,12 +35,13 @@ public class UserLoginDaoImpl implements userLoginDao {
 	@Override
 	public void addUserLogin(userLogin user) {
 		try {
-			String query = "insert into login values(fname, lname, email, password) values (?,?,?,?)";
+			String query = "insert into login(name, email, password) values (?,?,?)";
 			PreparedStatement preparedStatement = conn.prepareStatement(query);
-			preparedStatement.setString(1, user.getFname());
-			preparedStatement.setString(2, user.getLname());
-			preparedStatement.setString(3, user.getEmail());
-			preparedStatement.setString(4, user.getPassword());
+		
+			preparedStatement.setString(1, user.getName());
+			preparedStatement.setString(2, user.getEmail());
+			preparedStatement.setString(3, user.getPassword());
+			
 			preparedStatement.executeUpdate();
 			preparedStatement.close();
 		} catch (SQLException e) {

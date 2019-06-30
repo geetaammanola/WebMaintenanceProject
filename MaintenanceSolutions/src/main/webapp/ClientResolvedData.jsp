@@ -22,6 +22,11 @@
 	href="css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
 
 <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<script>
+	function success() {
+		alert("Data Is Submitted Successfully");
+	}
+</script>
 </head>
 <body>
 
@@ -150,7 +155,7 @@
 						<div class="col-md-12">
 
 							<input type="submit" class="btn btn-primary pull-right"
-								value="Submit">
+								onclick="success()" value="Submit">
 						</div>
 					</div>
 				</form>

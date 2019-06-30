@@ -71,7 +71,7 @@ public class NewComplainDaoImpl implements NewComplainDao {
 			preparedStatement.setString(6, NewComplain.getAddress());
 			preparedStatement.setDate(7, new java.sql.Date(NewComplain.getAppDate().getTime()));
 			preparedStatement.setString(8, NewComplain.getAppSlot());
-			preparedStatement.setInt(9, NewComplain.getComplainId());
+			//preparedStatement.setInt(9, NewComplain.getComplainId());
 
 			preparedStatement.executeUpdate();
 			preparedStatement.close();
